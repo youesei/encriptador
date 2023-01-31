@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+
+    <link rel="stylesheet" href="build/css/app.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    
+    <script src="https://kit.fontawesome.com/9d78278b8e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <div class="contenedor contenido">
+        <header class="header">
+            <picture>
+                <source srcset="build/img/logo.webp" type="image/webp">
+                <img src="build/img/logo.png" alt="logo Alura">
+            </picture>
+        </header>
+
+        <main class="input">
+
+            <div class="input-campo">
+                <textarea class="input-text" placeholder="Ingresa el texto aqui"></textarea>
+            </div>
+
+            <div class="input-mensaje">
+                <p class="help"><i class="fa-solid fa-circle-exclamation"></i> Solo letras minusculas y sin acentos</p>
+            </div>
+
+            <div class="input-botones">
+                <button class="btn-encriptar boton-primario">Encriptar</button>
+                <button class="btn-desencriptar boton-secundario">Desencriptar</button>
+            </div>
+
+        </main>
+
+        <section class="output">
+
+            <div class="output-contenido">
+                <div class="output-logo">
+                    <picture>
+                        <source srcset="build/img/character.webp" type="image/webp">
+                        <img src="build/img/character.png" alt="personaje">
+                    </picture>
+                </div>
+
+                <div class="output-texto">
+                    <h2>Ningun mensaje fue encontrado</h2>
+                    <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+                </div>
+            </div>
+
+            <div class="output-boton oculto">
+                <button class="boton-terciario boton-copiar ">Copiar</button>
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <p>&copy;Todos los Derechos reservados a Nelson Reina</p>
+    </footer>
+
+    <script src="build/js/bundle.min.js"></script>
+</body>
+</html>
